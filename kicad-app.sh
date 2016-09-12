@@ -21,7 +21,6 @@ I18N_DIR=i18n
 LIBRARY_DIR=library
 
 KICAD_BUILD_DIR=build
-I18N_BUILD_DIR=build-i18n
 
 KICAD_BIN=bin
 SUPPORT_BIN=support
@@ -190,7 +189,7 @@ kicad_patch() {
 }
 
 kicad_build() {
-    if [ ! -d $KICAD_SRC]; then
+    if [ ! -d $KICAD_SRC ]; then
         git clone $KICAD_GIT $KICAD_SRC
     fi
 
