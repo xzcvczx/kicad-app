@@ -1,0 +1,11 @@
+bin/
+build/
+i18n/
+kicad/
+kicad2mcad/
+library/
+wx/bin
+wx/build
+wx/src
+wx/wxPython*.tar.bz2
+wxformbuilder
