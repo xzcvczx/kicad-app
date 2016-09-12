@@ -38,7 +38,7 @@ KICAD_SETTINGS=(
     "-DOCE_DIR=$(brew --prefix oce)/OCE.framework/Versions/0.17/Resources/"
     "-DKICAD_SCRIPTING=ON"
     "-DKICAD_SCRIPTING_MODULES=ON"
-    "-DKICAD_SCRIPTIN_WXPYTHON=ON"
+    "-DKICAD_SCRIPTING_WXPYTHON=ON"
     "-DPYTHON_EXECUTABLE=$(which python)"
 )
 # -----
