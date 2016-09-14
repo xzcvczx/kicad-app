@@ -63,8 +63,8 @@ check_deps() {
         printf "Done\n"
     fi
     printf "Checking Dependencies... "
-    if ! brew list gettext cmake glew cairo glm automake libtool oce libngspice> /dev/null; then
-        printf "Run brew install boost gettext cmake glew cairo glm automake libtool homebrew/science/oce libngspice\n"
+    if ! brew list gettext cmake glew cairo glm automake libtool oce swig libngspice> /dev/null; then
+        printf "Run brew install boost gettext cmake glew cairo glm automake libtool homebrew/science/oce swig libngspice\n"
         exit 1
     else
         printf "Done\n"
