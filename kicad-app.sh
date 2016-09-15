@@ -33,6 +33,7 @@ KICAD_SETTINGS=(
     "-DCMAKE_INSTALL_PREFIX=$BASE/bin"
     "-DCMAKE_BUILD_TYPE=Release"
     "-DUSE_SCH_IO_MANAGER=ON"
+    "-DKICAD_INSTALL_DEMOS=OFF"
     "-DKICAD_SPICE=ON"
     "-DKICAD_USE_OCE=ON"
     "-DOCE_DIR=$(brew --prefix oce)/OCE.framework/Versions/0.17/Resources/"

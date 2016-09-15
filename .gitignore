@@ -4,6 +4,7 @@ i18n/
 kicad/
 kicad2mcad/
 library/
+patches/
 wx/bin
 wx/build
 wx/src
