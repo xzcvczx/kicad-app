@@ -4,7 +4,7 @@
 # Options
 # -----
 THREADS=5
-OSX_SDK_VER=10.11
+OSX_SDK_VER=10.12
 
 BASE=`pwd`
 COMPILER=clang
@@ -32,11 +32,11 @@ KICAD_SETTINGS=(
     "-DPYTHON_SITE_PACKAGE_PATH=$BASE/wx/bin/lib/python2.7/site-packages"
     "-DCMAKE_INSTALL_PREFIX=$BASE/bin"
     "-DCMAKE_BUILD_TYPE=Release"
-    "-DUSE_SCH_IO_MANAGER=ON"
+    "-DKICAD_USE_SCH_IO_MANAGER=ON"
     "-DKICAD_INSTALL_DEMOS=OFF"
     "-DKICAD_SPICE=ON"
     "-DKICAD_USE_OCE=ON"
-    "-DOCE_DIR=$(brew --prefix oce)/OCE.framework/Versions/0.17/Resources/"
+    "-DOCE_DIR=$(brew --prefix oce)/OCE.framework/Versions/0.18/Resources/"
     "-DKICAD_SCRIPTING=ON"
     "-DKICAD_SCRIPTING_MODULES=ON"
     "-DKICAD_SCRIPTING_WXPYTHON=ON"
@@ -123,7 +123,8 @@ check_wx() {
             --with-zlib=builtin \
             --with-expat=builtin \
             --without-liblzma \
-            --with-macosx-version-min=$OSX_SDK_VER
+            --with-macosx-version-min=$OSX_SDK_VER \
+            --disable-mediactrl # Not compatible with macOS 10.12
         cd ..
     fi
 
