@@ -10,3 +10,7 @@
 /wx/src/
 /wx/wxPython*.tar.bz2
 /wxformbuilder
+/xcode/
+
+.vscode/
+.DS_Store
